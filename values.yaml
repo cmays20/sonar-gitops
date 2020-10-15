@@ -5,13 +5,13 @@ sonarqube:
   ingress:
     enabled: true
     hosts:
-    - name: sonar.cmays-lab.com
+    - name: sonar.k8s-workshops.com
     tls:
     - hosts:
-        - sonar.cmays-lab.com
+        - sonar.k8s-workshops.com
       secretName: sonar-cert
     annotations: {
-      external-dns.alpha.kubernetes.io/hostname: sonar.cmays-lab.com
+      external-dns.alpha.kubernetes.io/hostname: sonar.k8s-workshops.com
     }
   persistence:
     enabled: true
